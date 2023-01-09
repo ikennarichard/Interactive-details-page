@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+}
+
+
+h1 {
+    font-size: 1rem;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+main {
+    width: 360px;
+}
+
+
+
+.bg_back {
+    width: 100%;
+    position: relative;
+}
+
+
+.card_back {
+    width: 17em;
+    position: absolute;
+    top: 2em;
+    left: 4.7em;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+.card_front {
+    width: 18em;
+    position: absolute;
+    top: 7.26em;
+    left: 1em;
+    bottom: 1em;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.logo {
+    width: 2em;
+}
+
+
+.card_no {
+    font-size: 1.3rem;
+}
+
+
+.card_name {
+    display: flex;
+}

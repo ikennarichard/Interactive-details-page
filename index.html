@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./styles.css">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Interactive card details form</title>
+  <script src="./script.js" defer></script>
 </head>
 <body>
-
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
+  <main>
+    <!-- bcakground  -->
+    <div class="bg_back">
+      <img src="./images/bg-main-mobile.png" alt="" class="bg_image">
+      <img src="./images/bg-card-back.png" alt="back of card" class="card_back">
+      <img src="./images/bg-card-front.png" alt="front of card" class="card_front">
+    </div>
+<!-- card front -->
+    <div class="card_details">
+      <div class="card_">
+        <img src="./images/card-logo.svg" alt="" class="logo">
+        <p class="card_no" >0000 0000 0000 0000</p>
+        <div class="card_name">
+          <h1>Jane Appleseed</h1>
+          <small>00/00</small>
+        </div>
+      </div>
+     
+      
+    </div>
+    <!-- form -->
+    <form action="#">
+      <div>
+        <label for="first_name">Cardholder Name</label>
+        <input type="text" placeholder="e.g. Jane Appleseed" id="first_name"> 
+      </div>
+  
+  
 
   Card Number
   e.g. 1234 5678 9123 0000
@@ -36,16 +49,19 @@
   e.g. 123
 
   Confirm
+    </form>
+  </main>
+  0000 0000 0000 0000
+ 
+  00/00
+
+  000
+
 
   <!-- Completed state start -->
 
   Thank you!
   We've added your card details
   Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
