@@ -10,53 +10,63 @@
 </head>
 <body>
   <main>
-    <!-- bcakground  -->
+    <!-- background  -->
     <div class="bg_back">
       <img src="./images/bg-main-mobile.png" alt="" class="bg_image">
       <img src="./images/bg-card-back.png" alt="back of card" class="card_back">
-      <img src="./images/bg-card-front.png" alt="front of card" class="card_front">
     </div>
 <!-- card front -->
-    <div class="card_details">
-      <div class="card_">
+    <div class="card_">
+      <div class="card_details">
         <img src="./images/card-logo.svg" alt="" class="logo">
-        <p class="card_no" >0000 0000 0000 0000</p>
+        <div class="card_no">
+          <p>0000</p>
+          <p>0000</p>
+          <p>0000</p>
+          <p>0000</p>
+        </div>
         <div class="card_name">
           <h1>Jane Appleseed</h1>
-          <small>00/00</small>
+          <div class="card_date">00/00</div>
         </div>
       </div>
-     
-      
     </div>
     <!-- form -->
     <form action="#">
-      <div>
-        <label for="first_name">Cardholder Name</label>
-        <input type="text" placeholder="e.g. Jane Appleseed" id="first_name"> 
+        <!-- cardholder name -->
+        <div class="cardholder_name">
+          <label for="card_name">Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" id=card_name"> 
+        </div>
+      
+        <!-- card number -->
+        <div class="card_number">
+          <label for="first_name">Card Number</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="first_name">
+        </div>
+
+        <!-- expiry date -->
+        <div class="date_">
+        <div class="exp_date_">
+          <label for="exp_date">exp. date</label>
+          <input type="text" placeholder="MM" id="exp_date">
+        </div>
+        <!-- month/year -->
+        <div class="month_year_">
+          <label for="month_year">(mm/yy)</label>
+          <input type="number" placeholder="YY" id="month_year">
+        </div>
+        <!-- c🤑 -->
+        <div class="cvc_">
+          <label for="cvc_number">Cvc</label>
+          <input type="number" placeholder="e.g. 123" id="cvc_number">
+        </div>
       </div>
-  
-  
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
+      
+      
+  <button class="confirm">Confirm</button>
     </form>
   </main>
-  0000 0000 0000 0000
- 
-  00/00
-
-  000
-
 
   <!-- Completed state start -->
 

@@ -1,15 +1,42 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&display=swap'); 
+
+
+:root {
+    /* active input border */
+    --linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    /* input errors */
+    --red: hsl(0, 100%, 66%);
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 
 body{
+    display: grid;
+    place-items: center;
     min-height: 100vh;
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.125rem;
 }
 
 
 h1 {
     font-size: 1rem;
+    margin-block: auto;
+    font-size: .6rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: normal;
 }
 
 
@@ -20,6 +47,7 @@ img {
 
 main {
     width: 360px;
+    
 }
 
 
@@ -27,42 +55,124 @@ main {
 .bg_back {
     width: 100%;
     position: relative;
+    
+}
+
+
+label {
+    text-transform: uppercase;
+    font-size: .7rem;
+    /* font-weight: 00; */
 }
 
 
 .card_back {
-    width: 17em;
+    width: 14em;
     position: absolute;
-    top: 2em;
-    left: 4.7em;
+    top: 2.7em;
+    left: 5.3em;
     bottom: 0;
     z-index: 2;
 }
 
 
-.card_front {
-    width: 18em;
+.card_ {
+    background: url('./images/bg-card-front.png') no-repeat 46% 1% ;
+    width: 16em;
+    height: 155px;
+    border-radius: .3em;
+    display: grid;
+    place-items: center;
     position: absolute;
-    top: 7.26em;
-    left: 1em;
-    bottom: 1em;
+    top: 7.4em;
+    margin-inline-start: 1em;
     z-index: 3;
+
+}
+
+
+.card_details {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
+    padding: 0 1em;
 }
 
 
 .logo {
-    width: 2em;
+    width: 3em;
+    /* padding-inline-start: 1em; */
 }
 
 
 .card_no {
-    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    letter-spacing: .15em;
+    margin-block-start: 1em;
 }
 
 
 .card_name {
     display: flex;
+    justify-content: space-between;
+    color: var(--light-grayish-violet);
 }
+
+
+.card_date {
+    margin-block: auto;
+    font-size: .6rem;
+}
+
+
+form {
+    color: var(--very-dark-violet);
+    display: grid;
+    gap: .7em;
+    border: 1px solid;
+    padding: 3.5em 1em 3em 1em;
+}
+
+input {
+    appearance: none;
+    display: block;
+    width: 100%;
+    border: 1px solid var(--light-grayish-violet);
+    padding: .7em;
+    border-radius: .4em;
+}
+
+input::placeholder {
+    color: var(--dark-grayish-violet);
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+input[type=number] {
+    appearance: textfield;
+}
+
+
+.date_ {
+    display: flex;
+    gap: 4px;
+}
+
+
+.date_ input {
+    width: 3.5em;
+}
+
+
+.cvc_ {
+    margin-inline-start: .4em;
+}
+
+
+.date_ #cvc_number {
+    width: 8em;
+}
+
+
