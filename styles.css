@@ -27,6 +27,7 @@ body{
     color: var(--white);
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.125rem;
+    background: var(--white);
 }
 
 
@@ -47,7 +48,7 @@ img {
 
 main {
     width: 360px;
-    
+    border: 1px solid black;
 }
 
 
@@ -62,17 +63,25 @@ main {
 label {
     text-transform: uppercase;
     font-size: .7rem;
-    /* font-weight: 00; */
 }
 
 
 .card_back {
+    /* display: none; */
     width: 14em;
     position: absolute;
-    top: 2.7em;
+    top: 2.6em;
     left: 5.3em;
     bottom: 0;
-    z-index: 2;
+    /* z-index: 0; */
+}
+
+
+.cvc_no {
+    color: var(--light-grayish-violet);
+    transform: translate(298px, -126px);
+    font-size: .5rem;
+    /* z-index: 1; */
 }
 
 
@@ -87,6 +96,7 @@ label {
     top: 7.4em;
     margin-inline-start: 1em;
     z-index: 3;
+    /* display: none; */
 
 }
 
@@ -106,9 +116,6 @@ label {
 
 
 .card_no {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
     letter-spacing: .15em;
     margin-block-start: 1em;
 }
@@ -131,7 +138,6 @@ form {
     color: var(--very-dark-violet);
     display: grid;
     gap: .7em;
-    border: 1px solid;
     padding: 3.5em 1em 3em 1em;
 }
 
@@ -142,6 +148,7 @@ input {
     border: 1px solid var(--light-grayish-violet);
     padding: .7em;
     border-radius: .4em;
+    margin-block-start: .6em;
 }
 
 input::placeholder {
@@ -175,4 +182,16 @@ input[type=number] {
     width: 8em;
 }
 
+
+button {
+    text-align: center;
+    padding: 1em 2em;
+    background-color: var(--very-dark-violet);
+    border: none;
+    outline: none;
+    border-radius: .3em;
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+    margin-block-start: 1em;
+}
 
