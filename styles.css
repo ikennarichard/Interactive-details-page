@@ -81,6 +81,7 @@ label {
     color: var(--light-grayish-violet);
     transform: translate(298px, -126px);
     font-size: .5rem;
+    letter-spacing: .1em;
     /* z-index: 1; */
 }
 
@@ -92,8 +93,7 @@ label {
     border-radius: .3em;
     display: grid;
     place-items: center;
-    position: absolute;
-    top: 7.4em;
+    transform: translate(0, -121px);
     margin-inline-start: 1em;
     z-index: 3;
     /* display: none; */
@@ -138,7 +138,8 @@ form {
     color: var(--very-dark-violet);
     display: grid;
     gap: .7em;
-    padding: 3.5em 1em 3em 1em;
+    padding: 0 1em 3em 1em;
+    margin-block-start: -5em;
 }
 
 input {
