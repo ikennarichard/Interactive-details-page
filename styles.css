@@ -4,7 +4,7 @@
 
 :root {
     /* active input border */
-    --linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --blue: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
     /* input errors */
     --red: hsl(0, 100%, 66%);
     /* neutral */
@@ -96,7 +96,6 @@ label {
     margin-inline-start: 1em;
     z-index: 3;
     /* display: none; */
-
 }
 
 
@@ -120,7 +119,7 @@ label {
 }
 
 
-.card_name {
+.front_card_details {
     display: flex;
     justify-content: space-between;
     color: var(--light-grayish-violet);
@@ -145,11 +144,25 @@ input {
     appearance: none;
     display: block;
     width: 100%;
-    border: 1px solid var(--light-grayish-violet);
+    border: 2px double var(--light-grayish-violet);
     padding: .7em;
     border-radius: .4em;
     margin-block-start: .6em;
+    outline: none;
 }
+
+
+input:focus {
+    border-color: transparent;
+    background: linear-gradient(to bottom,white, white), linear-gradient(to top, hsl(278, 94%, 30%) , hsl(249, 99%, 64%));
+    background-clip: padding-box,border-box;
+}
+
+
+input:invalid {
+    border-color: var(--red);
+}
+
 
 input::placeholder {
     color: var(--dark-grayish-violet);
@@ -193,6 +206,7 @@ button {
     color: var(--white);
     font-family: 'Space Grotesk', sans-serif;
     margin-block-start: 1em;
+    cursor: pointer;
 }
 
 
@@ -207,7 +221,6 @@ button {
         gap: 1em;
         width: 100%;
         max-width: 1100px;
-        border: 1px solid black;
         height: 672px;
     }
 
@@ -215,6 +228,7 @@ button {
     form {
         margin-block-start: -17em;
         padding: 0;
+        margin-inline-start: 2em;
     }
 
 
