@@ -39,32 +39,35 @@
     <form action="#">
         <!-- cardholder name -->
         <div class="cardholder_name">
-          <label for="card_name">Cardholder Name</label>
-          <input type="text" placeholder="e.g. Jane Appleseed" id=cardholder_name"> 
+          <label for="cardholder_name">Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="cardholder_name">
+          <span class="cardholder_error error"></span> 
         </div>
       
         <!-- card number -->
         <div class="card_number">
           <label for="first_name">Card Number</label>
-          <input type="text" inputmode="numeric" placeholder="e.g. 1234 5678 9123 0000" id="card_number">
-          <div class="error_message"></div>
+          <input type="text" inputmode="numeric" placeholder="e.g. 1234 5678 9123 0000" id="card_number" maxlength="19">
+          <div class="card_number_error"></div>
         </div>
 
         <!-- expiry date -->
         <div class="date_">
         <div class="exp_date_">
           <label for="exp_date">exp. date</label>
-          <input type="text" placeholder="MM" id="exp_date" name="exp_date" required>
+          <input type="number" placeholder="MM" id="exp_date" name="exp_date">
+          <span class="exp_date error">Cant be blank</span>
         </div>
         <!-- month/year -->
         <div class="month_year_">
           <label for="month_year">(mm/yy)</label>
-          <input type="number" placeholder="YY" id="month_year" name="exp_date" required>
+          <input type="number" placeholder="YY" id="month_year" name="exp_date">
         </div>
         <!-- c🤑 -->
         <div class="cvc_">
           <label for="cvc_number">Cvc</label>
-          <input type="number" placeholder="e.g. 123" id="cvc_number" required>
+          <input type="number" placeholder="e.g. 123" id="cvc_number" minlength="3" maxLength="3">
+          <span class="cvc-number error">Cant be blank</span>
         </div>
       </div>
       

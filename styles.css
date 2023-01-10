@@ -4,7 +4,7 @@
 
 :root {
     /* active input border */
-    --blue: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --active: linear-gradient(to bottom,white, white), linear-gradient(to top, hsl(278, 94%, 30%) , hsl(249, 99%, 64%));
     /* input errors */
     --red: hsl(0, 100%, 66%);
     /* neutral */
@@ -154,13 +154,8 @@ input {
 
 input:focus {
     border-color: transparent;
-    background: linear-gradient(to bottom,white, white), linear-gradient(to top, hsl(278, 94%, 30%) , hsl(249, 99%, 64%));
+    background: var(--active);
     background-clip: padding-box,border-box;
-}
-
-
-input:invalid {
-    border-color: var(--red);
 }
 
 
@@ -175,6 +170,12 @@ input[type=number] {
 }
 
 
+.error {
+    font-size: .6rem;
+    color: var(--red);
+}
+
+
 .date_ {
     display: flex;
     gap: 4px;
@@ -183,6 +184,11 @@ input[type=number] {
 
 .date_ input {
     width: 3.5em;
+}
+
+
+.month_year_ {
+    margin-inline-start: -.7em;
 }
 
 
