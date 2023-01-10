@@ -48,7 +48,6 @@ img {
 
 main {
     width: 360px;
-    border: 1px solid black;
 }
 
 
@@ -194,5 +193,53 @@ button {
     color: var(--white);
     font-family: 'Space Grotesk', sans-serif;
     margin-block-start: 1em;
+}
+
+
+/* media queries */
+
+@media (min-width:900px) {
+
+    main {
+        display: grid;
+        grid-template-columns: minmax(360px, 25%) 1fr;
+        place-items: center;
+        gap: 1em;
+        width: 100%;
+        max-width: 1100px;
+        border: 1px solid black;
+        height: 672px;
+    }
+
+
+    form {
+        margin-block-start: -17em;
+        padding: 0;
+    }
+
+
+    .card_ {
+        background-position: 80% 30%;
+        transform: translate(125px, -700px);
+    }
+
+
+    .card_back {
+        position: initial;
+        transform: translate(225px, -350px);
+        width: 15em;
+    }
+
+
+    button {
+        margin: 0;
+    }
+
+
+    .cvc_no {
+        transform: translate(447px, -436px); 
+        /* border: 1px solid black; */
+        width: fit-content;  
+    }
 }
 

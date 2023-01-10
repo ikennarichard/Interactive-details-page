@@ -10,10 +10,13 @@
 </head>
 <body>
   <main>
+    <div class="left_grid">
     <!-- background  -->
     <div class="bg_back">
-      
-      <img src="./images/bg-main-mobile.png" alt="" class="bg_image">
+      <picture>
+        <source media="(min-width:900px)" srcset="./images/bg-main-desktop.png">
+        <img src="./images/bg-main-mobile.png" alt="" class="bg_image">
+      </picture>
       <img src="./images/bg-card-back.png" alt="back of card" class="card_back">
       <div class="cvc_no">000</div>
       
@@ -31,6 +34,7 @@
         </div>
       </div>
     </div>
+  </div>
     <!-- form -->
     <form action="#">
         <!-- cardholder name -->
