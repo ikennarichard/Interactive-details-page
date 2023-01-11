@@ -71,6 +71,7 @@ label {
     top: 2.6em;
     left: 5.3em;
     bottom: 0;
+    filter: drop-shadow(1px 0 0.95rem var(--dark-grayish-violet));
     
 }
 
@@ -88,6 +89,7 @@ label {
 .card_ {
     background: url('./images/bg-card-front.png') no-repeat 46% 1% ;
     width: 16em;
+    filter: drop-shadow(7px 0 0.65rem var(--dark-grayish-violet));
     height: 155px;
     border-radius: .3em;
     display: grid;
