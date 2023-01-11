@@ -2,6 +2,8 @@
 
 This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+- [Live Site URL](https://ikennarichard.github.io/Interactive-details-page/)
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -35,7 +37,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/ikennarichard/Interactive-details-page)
-- [Live Site URL](https://your-live-site-url.com)
+
 
 ## My process
 
