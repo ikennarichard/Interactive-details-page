@@ -71,7 +71,7 @@ label {
     top: 2.6em;
     left: 5.3em;
     bottom: 0;
-    filter: drop-shadow(1px 0 0.95rem var(--dark-grayish-violet));
+    filter: drop-shadow(1px 0 0.95rem var(--light-grayish-violet));
     
 }
 
