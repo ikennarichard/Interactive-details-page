@@ -66,13 +66,12 @@ label {
 
 
 .card_back {
-    /* display: none; */
     width: 14em;
     position: absolute;
     top: 2.6em;
     left: 5.3em;
     bottom: 0;
-    /* z-index: 0; */
+    
 }
 
 
@@ -81,6 +80,7 @@ label {
     transform: translate(298px, -126px);
     font-size: .5rem;
     letter-spacing: .1em;
+    /* border: 1px solid black; */
     /* z-index: 1; */
 }
 
@@ -141,9 +141,10 @@ form {
 }
 
 input {
+    cursor: pointer;
     appearance: none;
     display: block;
-    width: 100%;
+    width: 330px;
     border: 2px double var(--light-grayish-violet);
     padding: .7em;
     border-radius: .4em;
@@ -187,11 +188,6 @@ input[type=number] {
 .date_ input {
     width: 3.5em;
 }
-
-
-/* .month_year_ {
-    margin-inline-start: -.7em;
-} */
 
 
 .cvc_ {
@@ -240,9 +236,15 @@ button {
     place-items: center;
 }
 
+.complete_username {
+    text-transform: uppercase; margin-top:-.6em;
+}
 /* media queries */
 
 @media (min-width:900px) {
+    body {
+        margin: 0;
+    }
 
     main {
         display: grid;
@@ -251,26 +253,25 @@ button {
         gap: 1em;
         width: 100%;
         max-width: 1100px;
-        height: 672px;
     }
 
 
     form {
-        margin-block-start: -17em;
+        margin-block-start: -20em;
         padding: 0;
-        margin-inline-start: 2em;
+        margin-inline-start: 5em;
     }
 
 
     .card_ {
         background-position: 80% 30%;
-        transform: translate(125px, -700px);
+        transform: translate(125px, -750px);
     }
 
 
     .card_back {
         position: initial;
-        transform: translate(225px, -350px);
+        transform: translate(235px, -410px);
         width: 15em;
     }
 
@@ -281,9 +282,11 @@ button {
 
 
     .cvc_no {
-        transform: translate(447px, -436px); 
+        transform: translate(447px, -496px); 
         /* border: 1px solid black; */
         width: fit-content;  
     }
+
+    
 }
 

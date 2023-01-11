@@ -112,7 +112,7 @@ inputElems.forEach((element) => {
 
 
 
-
+// form
 formElem.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -188,12 +188,11 @@ if(formElem.checkValidity()) {
     document.querySelector('form').innerHTML = `   <div class="complete">
      <img src="../images/icon-complete.svg" alt="" width="70px">
     <h4 >THANK YOU! </h4>
-    <h5 style="text-transform: uppercase; margin-top:-.6em;">${ cardholderName.value}</h5>
-     <p style="margin-top: -.9em;">We've added your card detailsp>
+    <h5 class='complete_username'>${ cardholderName.value}</h5>
+     <p style="margin-top: -.9em;">We've added your card details</p>
      <a href="index.html" class='continueLink'>Continue</a>
 </div>`
 
-// formElem.reset()
 
 }
    
