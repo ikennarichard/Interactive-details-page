@@ -92,7 +92,7 @@ label {
     border-radius: .3em;
     display: grid;
     place-items: center;
-    transform: translate(0, -121px);
+    transform: translate(0, -122px);
     margin-inline-start: 1em;
     z-index: 3;
     /* display: none; */
@@ -173,6 +173,8 @@ input[type=number] {
 .error {
     font-size: .6rem;
     color: var(--red);
+    display: block;
+    height: 2px;
 }
 
 
@@ -187,9 +189,9 @@ input[type=number] {
 }
 
 
-.month_year_ {
+/* .month_year_ {
     margin-inline-start: -.7em;
-}
+} */
 
 
 .cvc_ {
@@ -215,6 +217,28 @@ button {
     cursor: pointer;
 }
 
+.continueLink {
+    text-align: center;
+    padding: .8em 2em;
+    background-color: var(--very-dark-violet);
+    border: none;
+    outline: none;
+    border-radius: .3em;
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+    margin-block-start: 1em;
+    cursor: pointer;
+    text-decoration: none; 
+    width: 15em;  
+}
+
+
+/* complete task */
+
+.complete {
+    display: grid;
+    place-items: center;
+}
 
 /* media queries */
 
